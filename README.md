@@ -7,6 +7,28 @@ Example application and CI/CD pipeline showing how to deploy a Django website to
 
 <img src="myapp\images\django.png" alt="screenshot of the Django app" width="100%" />
 
+# Django!
+
+This is a very basic example of a simple Django App
+
+Clone this [elestio-examples/django](https://github.com/elestio-examples/django) 
+
+```
+git clone https://github.com/elestio-examples/django.git
+```
+Change into project directory.
+
+```
+pip install virtualenv
+virtualenv env
+pip install django
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+This starts your app in development mode, make the changes and push.
+
 ## CI/CD on Elestio
 
 Fork this repository to create your own copy that you can modify and use in a CI/CD pipeline
