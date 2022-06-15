@@ -3,10 +3,6 @@
 
 <a href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/django"><img src="myapp\images\deploy-on-elestio.png" alt="Deploy on elest.io" width="180px" /></a>
 
-Example application and CI/CD pipeline showing how to deploy a Django website to elestio.
-
-<img src="myapp\images\django.png" alt="screenshot of the Django app" width="100%" />
-
 # Django!
 
 This is a very basic example of a simple Django App
@@ -28,6 +24,11 @@ python manage.py runserver
 ```
 
 This starts your app in development mode, make the changes and push.
+
+Example application and CI/CD pipeline showing how to deploy a Django website to elestio.
+
+<img src="myapp\images\django.png" alt="screenshot of the Django app" width="100%" />
+
 
 ## CI/CD on Elestio
 
