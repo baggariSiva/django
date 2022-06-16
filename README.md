@@ -1,39 +1,61 @@
 # Django example demo CI/CD pipeline
 
+<a href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/django"><img src="myapp\images\deploy-on-elestio.png" alt="Deploy on Elest.io" width="180px" /></a>
 
-<a href="https://dash.elest.io/deploy?source=cicd&social=Github&url=https://github.com/elestio-examples/django"><img src="myapp\images\deploy-on-elestio.png" alt="Deploy on elest.io" width="180px" /></a>
+This is a very basic example of a simple Django App.
 
-# Django!
+<img src="myapp\images\django.png" alt="screenshot of the Django app" width="100%" />
 
-This is a very basic example of a simple Django App
+# Steps to clone this repository and run locally.
 
-Clone this [elestio-examples/django](https://github.com/elestio-examples/django) 
+
+### Step 1: Clone this repository.
 
 ```
 git clone https://github.com/elestio-examples/django.git
 ```
-Change into project directory.
+### Step 2: Go to project folder.
+
+```
+cd django
+```
+
+### Step 3: Create a Virtual Environment.
 
 ```
 pip install virtualenv
+```
+
+### Step 4: Activate the virtual environment.
+
+```
 virtualenv env
+```
+
+### Step 5: Install Django.
+
+```
 pip install django
+```
+
+### Step 6: Install requirements.txt file.
+
+```
 pip install -r requirements.txt
-python manage.py migrate
+```
+
+### Step 7: Run your app in dev mode..
+
+```
 python manage.py runserver
 ```
 
-This starts your app in development mode, make the changes and push.
-
-Example application and CI/CD pipeline showing how to deploy a Django website to elestio.
-
-<img src="myapp\images\django.png" alt="screenshot of the Django app" width="100%" />
+### Step 9: Make some changes and push.
 
 
 ## CI/CD on Elestio
 
-Fork this repository to create your own copy that you can modify and use in a CI/CD pipeline
-
+Showing here how to deploy to Elestio.
 
 # Steps to create CI/CD pipeline on elestio
 
@@ -49,19 +71,24 @@ We have three different types of deployment method
 - Gitlab
 - Docker compose
 
-But for these Django website examples, you can choose GitHub as your deployment method.
+But for this Django Template, you can choose GitHub as your deployment method.
 
 ### Step 3: Authentication
 
-Select Clone in step at step Git Repository and select Django template for creating a repository in your git account after that authenticate with Git by clicking on Continue with Github button and authorize elestio to access git then you can rename you repository name if you want.
+Select Clone in step at step Git Repository and select Django template for creating a repository in your git account after that authenticate with Git by clicking on
+Continue with Github button and authorize elestio to access git then you can rename you repository name if you want.
 
-Else If you forked the repo then you can click on the Continue with GitHub button and authorize elestio to access the git repo then you can select the Django repo otherwise you can directly insert a git repo URL to deploy the Django App.
+Else If you forked the repo then you can click on the Continue with GitHub button and authorize elestio to access the git repo then you can select the Django repo otherwise you can directly insert a git repo URL to deploy the Django application.
 
 ### Step 4: Configuration
 
 After selecting a repo or inserting a URL it will auto-filled all the desired configurations using the elestio.yml/elestio.json file.
 
-You can also manually customize the Configure your application, Reverse proxy configuration, and Environment variables.
+You can also manually customize the Configure your application. 
+
+Select your runtime and its version, run & build commands.
+
+Reverse proxy configuration, Volume Configuration, Exposed Ports Configuration and Environment variables.
 
 ### Step 5: Choose Deployment Targets
 
@@ -110,3 +137,5 @@ Now after following all the above steps you can click on the button **Create Ci/
 It will take a few seconds to deploy your pipeline on elestio.
 
 For each pipeline deployed on elestio will create a cname for it. but if you want your custom domain then you can configure it inside the target details.
+
+After Pipeline is deployed you can able to view the app by visiting the pipeline domain.
