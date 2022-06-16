@@ -44,7 +44,7 @@ pip install django
 pip install -r requirements.txt
 ```
 
-### Step 7: Run your app in dev mode..
+### Step 7: Run your app in dev mode.
 
 ```
 python manage.py runserver
