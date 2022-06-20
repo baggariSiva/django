@@ -35,25 +35,19 @@ pip install virtualenv
 virtualenv env
 ```
 
-### Step 5: Install Django.
-
-```
-pip install django
-```
-
-### Step 6: Install requirements.txt file.
+### Step 5: Install requirements.txt file.
 
 ```
 pip install -r requirements.txt
 ```
 
-### Step 7: Run your app in dev mode.
+### Step 6: Run your app in dev mode.
 
 ```
 python manage.py runserver
 ```
 
-### Step 8: Make some changes and push
+### Step 7: Make some changes and push
 Try to make some change in your Django project then push to the git repository
 
 After few seconds to few minutes your change will be deployed on your CI/CD target 🚀
